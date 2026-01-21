@@ -34,16 +34,19 @@ Bash
 pip install flask numpy pandas scikit-learn xgboost imbalanced-learn
 1. Train the Model
 Run the main pipeline to process the data and generate the .pkl files:
+
 `python main.py`
-2. Start the Web App
+
+3. Start the Web App
 Launch the Flask server to interact with the model:
 
 `python app.py`
 
 Open your browser and navigate to http://127.0.0.1:5000.
 
-
-
+## 📈 Performance
+The system evaluates models based on the ROC-AUC Score. Based on the latest run, the Naive Bayes model was selected as the best performing model for this specific dataset and saved for inference.
+![ROC Curve](ROC.png)
 
 
 
