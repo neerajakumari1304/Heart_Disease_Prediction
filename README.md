@@ -60,8 +60,6 @@ Launch the Flask server to interact with the model:
 
 `python app.py`
 
-Open your browser and navigate to http://127.0.0.1:5000.
-
 ## 🚀 Future Improvements
 To further enhance the model's accuracy and usability, the following steps are planned:
 
