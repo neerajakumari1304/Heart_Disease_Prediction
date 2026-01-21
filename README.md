@@ -1,2 +1,5 @@
-# Heart_Disease_Prediction
-Heart Disease Prediction – A structured dataset of patient health attributes (age, sex, chest pain type, blood pressure, cholesterol, ECG results, heart rate, etc.) with target labels indicating presence or absence of heart disease. Useful for exploratory data analysis, machine learning classification, and healthcare research
+📄 Heart Disease Prediction
+📌 Overview
+This project predicts the likelihood of heart disease using multiple machine learning models. It includes data preprocessing, feature scaling, balancing with SMOTE, model training, evaluation using ROC‑AUC, and saving the best performing model for inference. A simple web interface (Flask + HTML templates) is also provided for user interaction.
+
+
