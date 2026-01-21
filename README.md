@@ -23,26 +23,9 @@ File,Description
 ## 📊 Machine Learning Pipeline
 - Data Loading: Loads clinical data from heart (1).csv.
 - Imputation: Addresses missing values using random sampling to preserve distribution.
-- Feature Selection: * Removes features with zero or low variance.Drops features with high p-   values ($> 0.05$) via Pearson correlation.
+- Feature Selection:  Removes features with zero or low variance.Drops features with high p-   values ($> 0.05$) via Pearson correlation.
 - Scaling & Balancing: Standardizes features and applies SMOTE to ensure the model isn't biased toward a specific outcome.
 - Model Selection: Compares ROC-AUC scores across various models and exports the best performer.
-
-## 💻 How to Run
-Prerequisites
-Ensure you have Python installed, then install the required dependencies:
-Bash
-pip install flask numpy pandas scikit-learn xgboost imbalanced-learn
-1. Train the Model
-Run the main pipeline to process the data and generate the .pkl files:
-
-`python main.py`
-
-3. Start the Web App
-Launch the Flask server to interact with the model:
-
-`python app.py`
-
-Open your browser and navigate to http://127.0.0.1:5000.
 
 ## 📈 Performance
 The system evaluates models based on the ROC-AUC Score. Based on the latest run, the Naive Bayes model was selected as the best performing model for this specific dataset and saved for inference.
@@ -62,3 +45,30 @@ The system evaluates models based on the ROC-AUC Score. Based on the latest run,
 - **ROC-AUC Score:** 0.9170258620689655
 - **Status:** Selected for Production
 
+## 💻 How to Run
+Prerequisites
+Ensure you have Python installed, then install the required dependencies:
+Bash
+pip install flask numpy pandas scikit-learn xgboost imbalanced-learn
+1. Train the Model
+Run the main pipeline to process the data and generate the .pkl files:
+
+`python main.py`
+
+3. Start the Web App
+Launch the Flask server to interact with the model:
+
+`python app.py`
+
+Open your browser and navigate to http://127.0.0.1:5000.
+
+## 🚀 Future Improvements
+To further enhance the model's accuracy and usability, the following steps are planned:
+
+- Hyperparameter Tuning: Implement GridSearchCV to optimize the Naive Bayes and Random Forest parameters.
+
+- Deep Learning: Explore Artificial Neural Networks (ANNs) to compare performance against traditional classifiers.
+
+- Cloud Deployment: Deploy the Flask application to Heroku or AWS for public accessibility.
+
+- Expanded Dataset: Incorporate more diverse patient data to improve model generalization.
