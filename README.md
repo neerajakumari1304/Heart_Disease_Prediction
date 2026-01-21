@@ -46,7 +46,19 @@ Open your browser and navigate to http://127.0.0.1:5000.
 
 ## 📈 Performance
 The system evaluates models based on the ROC-AUC Score. Based on the latest run, the Naive Bayes model was selected as the best performing model for this specific dataset and saved for inference.
+- XGBClassifier Test Accuracy : 0.819672131147541
+- KNN ROC-AUC Score : 0.9116379310344828
+- Naive Bayes ROC-AUC Score : 0.9170258620689655
+- Logistic Regression ROC-AUC Score : 0.9170258620689655
+- Decision Tree ROC-AUC Score : 0.7855603448275862
+- Random Forest ROC-AUC Score : 0.9137931034482758
+- AdaBoost ROC-AUC Score : 0.8679956896551724
+- Gradient Boosting ROC-AUC Score : 0.8970905172413793
+- XGBoost ROC-AUC Score : 0.8987068965517242
+  
 ![ROC Curve](ROC.png)
 
-
+**Best Model Performance (Naive Bayes):**
+- **ROC-AUC Score:** 0.9170258620689655
+- **Status:** Selected for Production
 
