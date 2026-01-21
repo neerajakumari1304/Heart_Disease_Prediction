@@ -4,13 +4,9 @@ This project is a comprehensive Machine Learning pipeline designed to predict th
 
 ## 🚀 Features
 - Automated Pipeline: Handles missing values, outlier detection, and data balancing (SMOTE).
-
 - Feature Selection: Uses Variance Thresholding and Pearson Correlation to identify the most impactful features.
-
 - Multi-Model Evaluation: Trains and compares 8+ algorithms, including Random Forest, XGBoost, and Naive Bayes.
-
 - Web Interface: A Flask-based web application for easy user interaction.
-
 - Robust Logging: Detailed logs are generated for every step of the pipeline to assist in debugging and monitoring.
 
 ## ⚙️ Project Structure
@@ -24,14 +20,27 @@ File,Description
 - log_code.py ---> Custom logging configuration for the project.
 - Heart_Disease.pkl ---> "The serialized ""Best Model"" (Naive Bayes) ready for production."
 
-📊 Machine Learning Pipeline
+## 📊 Machine Learning Pipeline
 - Data Loading: Loads clinical data from heart (1).csv.
 - Imputation: Addresses missing values using random sampling to preserve distribution.
 - Feature Selection: * Removes features with zero or low variance.Drops features with high p-   values ($> 0.05$) via Pearson correlation.
 - Scaling & Balancing: Standardizes features and applies SMOTE to ensure the model isn't biased toward a specific outcome.
 - Model Selection: Compares ROC-AUC scores across various models and exports the best performer.
 
-
+## 💻 How to Run
+Prerequisites
+Ensure you have Python installed, then install the required dependencies:
+Bash
+pip install flask numpy pandas scikit-learn xgboost imbalanced-learn
+1. Train the Model
+Run the main pipeline to process the data and generate the .pkl files:
+Bash
+python main.py
+2. Start the Web App
+Launch the Flask server to interact with the model:
+Bash
+python app.py
+Open your browser and navigate to http://127.0.0.1:5000.
 
 
 
